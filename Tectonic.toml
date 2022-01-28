@@ -1,0 +1,9 @@
+[doc]
+name = "thesis"
+bundle = 'https://data1.fullyjustified.net/tlextras-2020.0r0.tar'
+
+[[output]]
+name = "thesis"
+index = "index.tex"
+tex_format="latex"
+type = "pdf"

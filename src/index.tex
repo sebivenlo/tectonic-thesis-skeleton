@@ -1,0 +1,45 @@
+\maketitle
+
+% Define roman numbering for the pages that do not belong to the main content
+\pagenumbering{roman} 
+
+% Include all the pre-chapters
+\input{configuration/informationpage}
+\include{chapters/preface}
+\include{chapters/summary_en}
+\include{chapters/summary_nl_de}
+
+\input{configuration/statementofauthenticity}
+%% usual tables like table of contents, table of figures etc.
+\input{configuration/preambletables}
+
+% Define arabic numbering for the pages that belong to the main content
+\pagenumbering{arabic} 
+
+% Define page heading style
+\pagestyle{chapter-header-style}
+
+% Include chapters
+\include{chapters/chapter_1}
+\include{chapters/chapter_2}
+\include{chapters/chapter_3}
+\include{chapters/chapter_4}
+\include{chapters/chapter_5}
+\include{chapters/chapter_6}
+\include{chapters/chapter_7}
+\include{chapters/mathematics}
+
+\include{chapters/self_reflection}
+
+% Set bibliography style to Harvard
+\bibliographystyle{agsm}
+
+% Add the bibliography at the end
+\bibliography{references}
+
+% Add appendix
+\begin{appendices}
+\include{chapters/appendix}
+\end{appendices}
+
+\end{document}
