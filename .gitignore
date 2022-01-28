@@ -276,3 +276,6 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+## prevent my signature from leaking
+src/authenticity_signature.png
