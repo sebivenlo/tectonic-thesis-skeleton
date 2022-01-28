@@ -12,6 +12,8 @@
 *.cb2
 .*.lb
 
+## tectonic build dir
+build/
 ## Intermediate documents:
 *.dvi
 *.xdv

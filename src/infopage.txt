@@ -8,7 +8,8 @@
 \def\studentname{Pietje Bell}
 \def\snumber{1234567}
 \def\place{Venlo}
-\def\course{Informatics - Business Informatics/Software Engineering}
+%\def\course{Informatics - Business Informatics}
+\def\course{Informatics - Software Engineering}
 \def\period{Month Year - Month Year}
 \def\companyname{Company Name}
 \def\companyaddress{Default Street 123}
