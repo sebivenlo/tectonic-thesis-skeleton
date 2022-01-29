@@ -13,7 +13,7 @@
 }
 
 \providecommand\Languages{ngerman,english,main=dutch}
-\documentclass[a4paper,twoside,11pt]{scrreprt}
+\documentclass[a4paper,twoside,11pt]{report}
 \usepackage[\Languages]{babel}
 \usepackage[scale={.8,.8}]{geometry}
 \usepackage{layout}
@@ -38,6 +38,7 @@
   chngpage,
   xcolor,
   colortbl,
+  varioref,
 }
 \usepackage{unicode-math}
 \usepackage{fontspec}
@@ -104,7 +105,6 @@
   \renewcommand{\refname}{Verweise}
   \renewcommand{\bibname}{Verweise}
 }
-%% to speed up building, include only what is in ./IncludeOnly.tex
 \providecommand\DefInfo[1]{ define \textbackslash{}#1 in file ./infopage.txt}
 \providecommand\documentname{\DefInfo{documentname}}
 \providecommand\studentname{\DefInfo{studentname}}
@@ -133,4 +133,5 @@
 \DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
 \makeatother
 
+%% to speed up building, include only what is in ../IncludeOnly.tex
 \InputIfFileExists{IncludeOnly.tex}{}{}

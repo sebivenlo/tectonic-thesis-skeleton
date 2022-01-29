@@ -1,7 +1,10 @@
+%% do the table of contents only if there is NO IncludeOnly.tex
+\IfFileExists{IncludeOnly.tex}{}{
+
 \addcontentsline{toc}{chapter}{Statement of Authenticity}
 
-%\section*{Statement of Authenticity}
-\addsec{Statement of Authenticity}
+\section*{Statement of Authenticity}
+%\addsec{Statement of Authenticity}
 
 \sloppypar
 I, the undersigned, hereby certify that I have compiled and written
@@ -51,3 +54,4 @@ Signature:  \\
   }}
 
 \clearpage
+}

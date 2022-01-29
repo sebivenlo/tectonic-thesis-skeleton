@@ -1,12 +1,17 @@
 \chapter{Implementation}
 
 
-The figure~\ref{fig:testable-design} on page~\pageref{fig:testable-design} below is only intended as an example.
+Nnote how we use vpageref from the poackage varioref to produce
+a reference to another page. In this case it produces ``on the
+following page''.
+The figure~\ref{fig:testable-design} ~\vpageref{fig:testable-design} is only intended as an example.
 
 \begin{figure}[t]
-\includegraphics[width=\linewidth]{images/testable-design.pdf}
-\label{fig:testable-design}
-\caption{Example of a testable design}
+  \includegraphics[width=\linewidth]{images/testable-design.pdf}
+  % make sure to put the label NOT BEFORE the caption.
+  % my default is to put it INSIDE caption
+  \caption{\label{fig:testable-design}
+    Example of a testable design}
 \end{figure}
 
 TODO
